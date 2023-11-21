@@ -7,7 +7,7 @@
   </head>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs='sourceType: webcam;'>
-      <a-image src="userHero.jpg" position="0 0 -1"></a-image>
+      
       <a-entity camera></a-entity>
     </a-scene>
   </body>
