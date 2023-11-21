@@ -35,14 +35,16 @@
   
   <a-scene
     embedded
-    arjs='sourceType: webcam;'
+    arjs="sourceType: webcam;"
   >
     <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
     
       
-    <a-image position='0 0 0' material='opacity:0.5;' width='4' height="3" scale="2 2 2" >
-    </a-image>
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    <a-plane id="imagePlane" position="0 0 0" rotation="-90 0 0" width="4" height="3" 
+      material="shader:flat; scale= 2 2 2 src:userHero.jpg " 
+    >
+    </a-plane>
+    <a-camera></a-camera>
   </a-scene>
 </body>
 
