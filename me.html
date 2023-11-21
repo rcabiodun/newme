@@ -17,14 +17,15 @@
 
     
     <a-marker preset="hiro">
-      <a-entity look-controls position="0 -0.5 0" rotation="0 0 0" scale="1 1 1">
+      <!-- <a-entity look-controls position="0 -0.5 0" rotation="0 0 0" scale="1 1 1">
           <a-image src="userHero.jpg" position="0 0 -1"  rotation="-90 0 0"  height="1" width="1" ></a-image>
-      </a-entity>
+      </a-entity> -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="2.5" material="shader:flat; scale:2 2 2; src:userHero.jpg"></a-plane>
     </a-marker>
     
    
     
-      <a-camera  rotation-reader> </a-camera>
+      <a-entity  camera> </a-entity>
     </a-scene>
   </body>
 </html>
