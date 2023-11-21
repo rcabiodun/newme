@@ -32,9 +32,7 @@
 
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded -->
-  <div class="arjs-loader">
-    <div>Loading, please wait...</div>
-  </div>
+  
   <a-scene
     vr-mode-ui="enabled: false;"
     renderer="logarithmicDepthBuffer: true; precision: medium;"
@@ -43,9 +41,9 @@
   >
     <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
     
-      <a-image src="userHero.jpg"  width="0.7" height="0.7" position="0 0 -1">
-     </a-image>
-     
+      
+    <a-marker preset="hiro">
+    </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
 </body>
