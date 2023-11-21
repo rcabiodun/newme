@@ -12,20 +12,21 @@
   <body>
     <a-scene
       vr-mode-ui="enabled: false"
-      arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
+      arjs="sourceType: webcam; "
     >
 
     
-    <a-marker preset="hiro">
       <!-- <a-entity look-controls position="0 -0.5 0" rotation="0 0 0" scale="1 1 1">
           <a-image src="userHero.jpg" position="0 0 -1"  rotation="-90 0 0"  height="1" width="1" ></a-image>
       </a-entity> -->
-      <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="2.5" material="shader:flat; scale:2 2 2; src:userHero.jpg"></a-plane>
-    </a-marker>
+
+      <!-- <a-plane position="0 0 0" rotation="-90 0 0" width="2" height="2.5" material="shader:flat; scale:2 2 2; src:userHero.jpg"></a-plane> -->
+      <a-box position="0 0.5 0" material="opacity:0.5;"></a-box>
     
    
     
-      <a-entity  camera> </a-entity>
+      <a-marker-camera preset="hiro"> </a-marker-camera>
+
     </a-scene>
   </body>
 </html>
