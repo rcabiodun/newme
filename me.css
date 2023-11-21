@@ -1,0 +1,13 @@
+html,body{
+    margin: 0;
+    height: 100%;
+}
+body{
+    display: flex;
+   
+}
+#main{
+    display: flex;
+    background-color: blue;
+    flex: 1;
+}

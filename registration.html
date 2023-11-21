@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Skillspot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/resgistration.css'>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    
+    <script src='main.js'></script>
+</head>
+<body>
+   <div class="main-container">
+    <div class="img-container">
+
+        <!-- <img src="login-reg_Hero.jpg" alt="login-image" id="registration-img" > -->
+        <dotlottie-player src="https://lottie.host/b7104f4f-7626-426d-ad39-9bf9c77fcd8e/KFIeHEPD4P.json" background="transparent" speed="1" id="registration-img"  loop autoplay></dotlottie-player>
+    </div>
+    <div class="registration-container">
+       
+      
+        <form id="form">
+            <div id="txt-container">
+
+                <h1>Sign Up</h1>
+    
+                <h2>Already have an accout?  <a href="#">Sign In</a> </h2>
+            </div>
+            <input class="txt-input" placeholder="Your name" type="text"/>
+            <input class="txt-input"placeholder="Username" type="text"/>
+            <input class="txt-input" placeholder="Email address" type="email"/>
+            <input  class="txt-input" placeholder="Password" type="password"/>
+            <div id="check-section">
+                <div>
+
+                   
+                    <label id="remember-check-label" >  <input type="checkbox" placeholder="" id="remember-check"> I agree with <span>Privacy Policy</span> and <span>Terms of Use</span></label>
+                </div>
+
+                <div id="forgot-pwd">
+                    <h2></h2>
+                 </div>
+            </div>
+            <input type="submit" value="Sign Up" id="registration-btn">
+        </form>
+    </div>
+    
+</div>
+</body>
+</html>
